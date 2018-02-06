@@ -1,0 +1,6 @@
+boto3
+Flask
+qrtools
+zbarlight
+mysql-connector==2.1.4
+opencv-python

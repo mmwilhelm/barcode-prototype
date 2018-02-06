@@ -1,0 +1,14 @@
+<div class="mdl-card__supporting-text">
+  <table class="mdl-data-table mdl-js-data-table mdl-data-table--selectable mdl-shadow--2dp">
+    <tbody>
+      {% for event in events %}
+      <tr><td class="mdl-data-table__cell--non-numeric"><b>Dish ID:</b> {{event[0]}}</td></tr>
+      <tr><td class="mdl-data-table__cell--non-numeric"><b>Image Path:</b> {{event[1]}}</td></tr>
+      <tr><td class="mdl-data-table__cell--non-numeric"><b>Time:</b> {{event[2]}}</td></tr>
+      <tr><td class="mdl-data-table__cell--non-numeric"><b>Pupae Count:</b> {{event[3]}}</td></tr>
+      <tr><td class="mdl-data-table__cell--non-numeric"><b>Larvae Count:</b> {{event[4]}}</td></tr>
+      <tr><td class="mdl-data-table__cell--non-numeric"></td></tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</div>

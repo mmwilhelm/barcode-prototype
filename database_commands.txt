@@ -1,0 +1,13 @@
+use barcode_db;
+
+CREATE TABLE events (
+  dish_id varchar(512),
+  image_path varchar(512),
+  timestamp timestamp,
+  pupae_count int,
+  larvae_count int
+);
+
+
+INSERT INTO events (dish_id, image_path, timestamp, pupae_count, larvae_count)
+VALUES ("some_id", "/some/path", current_timestamp(), 100, 200);
